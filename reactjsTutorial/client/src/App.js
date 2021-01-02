@@ -1,4 +1,9 @@
 import React,{Component} from 'react'
+/* import LectureStyle from './tutorial/LectureStyle'
+import IntroState from './tutorial/IntroState'
+ */import DepthState from './tutorial/DepthState'
+
+
 //import React from 'react' // for the first export type
 
 /* class App extends React.Component{
@@ -28,7 +33,7 @@ export default class App extends Component{
         return n1 * n2
     }
     someJsx(){
-        const someArr = [<li>1</li>,<li>2</li>,<li>3</li>]
+        const someArr = [<li key='1'>1</li>,<li key='2'>2</li>,<li key='3'>3</li>]
         return(
             <ul>
                 {//<li>1</li>
@@ -68,7 +73,9 @@ export default class App extends Component{
             {3>2 ? '3 is bigger than 2 ': 'its not'}
             {true && <h1>thing i want to render</h1>}
             {this.conditionRender()}
-            
+{/*             <LectureStyle isError = {false}/>
+            <IntroState/>
+ */}            <DepthState/>
         </div>
         )
     }
